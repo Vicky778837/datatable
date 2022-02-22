@@ -1,0 +1,54 @@
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Ecom orders</h1>
+
+<%= link_to "New ecom order", new_ecom_order_path %>
+
+
+    <table class="display table table-bordered table-responsive" id="data">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">price</th>
+            <th scope="col">itek_sku</th>
+            <th scope="col">purchase_date</th>
+            <th scope="col">platform_order_num</th>
+            <th scope="col">sales_channel</th>
+            <th scope="col">status</th>
+            <th scope="col">customer_name</th>
+            <th scope="col">customer_state</th>
+            <th scope="col">shipped_at</th>
+            <th scope="col">num_items_shipped</th>
+            <th scope="col">payment_method</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @ecom_orders.each do |f| %>
+          <tr>
+            <th><%=f.id%></th>
+            <td><%=f.price%></td>
+            <td><%=f.itek_sku %></td>
+            <td><%=f.purchase_date%></td>
+            <td><%=f.platform_order_num%></td>
+            <td><%=f.sales_channel%></td>
+            <td><%=f.status%></td>
+            <td><%=f.customer_name%></td>
+            <td><%=f.customer_state%></td>
+            <td><%=f.shipped_at%></td>
+            <td><%=f.num_items_shipped%></td>
+            <td><%=f.payment_method%></td>
+          </tr>
+          <% end %>
+        </tbody>
+    </table>
+</div>
+
+<script>
+$(document).ready(function () {
+   $('#data').dataTable();
+});
+</script>
+ 
+
+

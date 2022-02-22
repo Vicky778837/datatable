@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1.5
+  itek_sku: MyString
+  purchase_date: 2022-02-22 14:50:51
+  platform_order_num: MyString
+  sales_channel: MyString
+  status: MyString
+  customer_name: MyString
+  customer_state: MyString
+  shipped_at: 2022-02-22 14:50:51
+  num_items_shipped: 1
+  payment_method: MyString
+
+two:
+  price: 1.5
+  itek_sku: MyString
+  purchase_date: 2022-02-22 14:50:51
+  platform_order_num: MyString
+  sales_channel: MyString
+  status: MyString
+  customer_name: MyString
+  customer_state: MyString
+  shipped_at: 2022-02-22 14:50:51
+  num_items_shipped: 1
+  payment_method: MyString
